@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  /* display: flex; */
+
+}
+header{
+max-width: 100%;
+ display: flex;
+justify-content: space-around; 
+border: none;
+align-items: center;
+padding: 2rem; 
+font-size: 1.3em;
+box-shadow: 1px 2px 1px grey;
+
+}
+
+header a{
+  padding: 5px;
+   text-decoration: none;
+   color: black;
+   
+}
+header a:hover{
+  transition: 0.6s;
+   border-bottom:2px solid ;
+   color: green;
+
+
+}
+main{
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+  column-gap: 10px;
+
+}
+.my-pic{
+display: flex;
+width: 25%;
+/* max-width: 25%; */
+border-radius: 48%;
+border: none;
+object-fit: cover;
+height: 18rem;
+overflow: hidden;
+}
+.my-pic img{
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 40rem;
+  row-gap: 1rem;
+  
+  
+}
+.name{
+  display: flex;
+  color: green;
+  font-size: 3em;
+
+
+}
+
+.info{
+  display: flex;
+  max-width: 40rem;
+  font-size: 2em;
+}
+.next{
+  display: flex;
+  justify-content: space-around;
+
+}
+button{
+  background: none;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background-color: green;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+@media(max-width:500px){
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    row-gap: 5rem;
+    
+  }
+  .my-pic{
+display: flex;
+max-width: 40%;
+border-radius: 50%;
+border: 1px solid green;
+object-fit: cover;
+height: auto;
+
+}
+
+}

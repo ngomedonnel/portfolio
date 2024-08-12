@@ -1,0 +1,133 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+    /* Add some basic styling to make the page look decent */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+    }
+    header {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  font-size: 1.3em;
+  box-shadow: 1px 2px 1px crimson;
+  background-color: floralwhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+}
+
+header a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a:hover {
+  color: crimson;
+  border-bottom: 2px solid crimson;
+}
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 8rem;
+    }
+    .about-me {
+      flex-basis: 60%;
+      padding: 20px;
+      background-color: #FFFAF0;
+      border: 2px dashed;
+      border-color: brown;
+      border-top: none;
+       animation: fadeIn 1s ease-in;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .certification {
+      flex-basis: 30%;
+      padding: 20px;
+      background-color: #FFFAF0;
+      border: 2px dashed;
+      border-color: brown;
+      border-top: none;
+     
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .social-media {
+      flex-basis: 20%;
+      padding: 20px;
+      background-color: #FFFAF0;
+      border: 2px dashed;
+      border-color: brown;
+      border-top: none;
+      animation: fadeIn 3s ease-in;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    .title{
+      color: brown;
+    }
+    
+    li{
+       list-style: none;
+       margin-top: 5px;
+
+    }
+    li a img{
+      width: 20px;
+
+    }
+    li a{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: green;
+    }
+    /* .image {
+      width: 150px;
+      height: 150px;
+      margin: 20px;
+      float: right;
+    } */
+
+
+    @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .about-me, .certification, .social-media {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+  
